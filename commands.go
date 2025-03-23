@@ -57,6 +57,6 @@ func ListTasks(tasks []Task) {
 		if task.Completed {
 			status = "X"
 		}
-		fmt.Printf("%d: [%s] %s\n", task.ID, status, task.Description)
+		fmt.Printf("%d: %s [%s]\n", task.ID, task.Description, status)
 	}
 }
